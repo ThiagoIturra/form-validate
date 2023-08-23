@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-Hant, en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shanghai Station</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section class="buy-ticket-screen ">
+        <container class="instruction-screen-container">
+            <h1 class="instruction-text-local">在面板上输入您的电子邮件地址，您将收到地铁票 ID 和密码。然后将身份证贴在指定面板上即可乘坐地铁</h1>
+            <hr class="divider">
+            <h1 class="instruction-text">Enter your email address on the panel and you will receive the metro ticket ID and password. Then put the ID on the designated panel and you are ready to use the metro.</h1>
+        </container>
+        <container class="form-screen-container">
+            <img src="./assets/img/perfil-image.png" class="perfil-image">
+            <h1 class="wellcome-text-local">欢迎来到上海站</h1>
+            <h1 class="wellcome-text">Wellcome to<br><span class="city-name">Shanghai</span> station</h1>
+                <form id="form" action="" method="post" class="forms-login">
+                    <div>
+                        <label>电子邮件</label>
+                        <label>Email</label>
+                    </div>
+                    <input type="text" name="email" id="email" onchange="controlDisabled()" autocomplete="off">
+                    <div>
+                        <label>密码</label>
+                        <label>Password</label>
+                    </div>
+                    <input type="password" name="password" id="password" onchange="controlDisabled()" autocomplete="off">
+                    <div class="button-container">
+                        <button class="button-submit" id="recover-password-button" disabled="true" type="submit">找回密码<br><span>recover password</span></button>
+                    </div>
+                    <div class="button-container">
+                        <button class="button-submit" id="login-button" disabled="true" type="submit">进入<br><span>enter</span></button>
+                    </div>
+                    <div class="button-container">
+                        <button class="button-submit" type="submit">注册<br><span>register</span></button>
+                    </div>
+                </form>
+            <button></button>
+        </container>
+    </section>
+    <audio autoplay src="./assets/Sounds of the Subway (320 kbps).mp3" loop></audio>
+    <script src="./js/script.js"></script>
+</body>
+</html>
